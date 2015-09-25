@@ -6,12 +6,9 @@
     <p>{{model.body}}</p>
     {{update-question question=model update="update"}}
   </div>
-  <ul class="list-group">
-  <!-- {{#each model as |question|}}
-    {{#link-to 'question' question.id}}
-    <li class="list-group-item"><h4>{{question.name}} wants to know:</h4> {{question.title}}</li>
-    {{/link-to}}
-  {{/each}} -->
-  </ul>
-  <div class="panel-footer">{{new-answer save="save"}}</div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h2>Community Answers</h2></div>
+  {{new-answer saveAnswer="saveAnswer" question=model}}
 </div>
