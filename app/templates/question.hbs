@@ -4,6 +4,7 @@
   <div class="panel-heading"><h2>{{model.title}}</h2> -{{model.name}}</div>
   <div class="panel-body">
     <p>{{model.body}}</p>
+    {{update-question question=model update="update"}}
   </div>
   <ul class="list-group">
   <!-- {{#each model as |question|}}
