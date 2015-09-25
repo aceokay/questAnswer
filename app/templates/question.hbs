@@ -8,12 +8,12 @@
   </div>
 </div>
 
-<div class="panel panel-default">
+<div class="panel panel-warning">
   <div class="panel-heading"><h2>Community Answers</h2></div>
   <ul class="list-group">
   {{#each model.answers as |answer|}}
     <li class="list-group-item">
-      <h5>{{answer.name}} says: {{answer.body}}</h5> 
+      <h5>{{answer.name}} says: </h5> {{answer.body}}
       <!-- <button class="btn btn-danger" {{action 'destroyQuestion' question}}>Delete</button> -->
     </li>
   {{/each}}

@@ -1,5 +1,5 @@
 {{yield}}
-<div class="panel-footer">
+<div class="panel-footer panel-warning">
   {{#if addNewAnswer}}
       <h3>Add New Answer</h3>
       <div class="container">
@@ -16,6 +16,6 @@
         </form>
       </div>
   {{else}}
-      <button class="btn" {{action 'answerFormShow'}}>Add New Answer</button>
+      <button class="btn btn-warning" {{action 'answerFormShow'}}>Add New Answer</button>
   {{/if}}
 </div>
