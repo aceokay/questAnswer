@@ -1,0 +1,16 @@
+{{outlet}}
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h2>{{model.title}}</h2> -{{model.name}}</div>
+  <div class="panel-body">
+    <p>{{model.body}}</p>
+  </div>
+  <ul class="list-group">
+  <!-- {{#each model as |question|}}
+    {{#link-to 'question' question.id}}
+    <li class="list-group-item"><h4>{{question.name}} wants to know:</h4> {{question.title}}</li>
+    {{/link-to}}
+  {{/each}} -->
+  </ul>
+  <div class="panel-footer">{{new-answer save="save"}}</div>
+</div>

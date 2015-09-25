@@ -4,7 +4,9 @@
   <div class="panel-heading">Current Questions</div>
   <ul class="list-group">
   {{#each model as |question|}}
-    <li class="list-group-item"><h4>{{question.name}} wants to know:</h4> {{question.title}}</li>
+    {{#link-to 'question' question.id}}
+    <li class="list-group-item"><h5>{{question.name}} wants to know:</h5> {{question.title}}</li>
+    {{/link-to}}
   {{/each}}
   </ul>
   <div class="panel-footer">{{new-question save="save"}}</div>
