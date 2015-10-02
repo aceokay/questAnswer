@@ -1,13 +1,16 @@
 {{outlet}}
 
 <div class="panel panel-default">
-  <div class="panel-heading">Current Questions</div>
+  <div class="panel-heading">
+    <h1>Current Questions</h1>
+  </div>
   <ul class="list-group">
   {{#each model as |question|}}
     {{#link-to 'question' question.id}}
     <li class="list-group-item">
-      <h5>{{question.name}} wants to know:</h5> {{question.title}}
-      <button class="btn btn-danger" {{action 'destroyQuestion' question}}>Delete</button>
+      <button class="btn btn-danger pull-right" {{action 'destroyQuestion' question}}>Delete</button>
+      <h5>{{question.name}} wants to know:</h5>
+      {{question.title}}
     </li>
     {{/link-to}}
   {{/each}}

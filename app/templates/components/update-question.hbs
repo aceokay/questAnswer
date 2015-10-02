@@ -17,9 +17,9 @@
         {{input value=body id="body" class="form-control" placeholder=question.body}}
       </div>
 
-      <button class="btn" {{action 'update' question}}>Save</button>
+      <button class="btn pull-right" {{action 'update' question}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button class="btn" {{action 'updateQuestionForm'}}>Edit</button>
+  <button class="btn center-block" {{action 'updateQuestionForm'}}>Edit</button>
 {{/if}}
